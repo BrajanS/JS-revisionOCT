@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo1</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="./ex1p1.js"></script> -->
+    <script src="ex1p2.js"></script>
+</head>
+
+<body>
+    <h1>Exo1</h1>
+    <script>
+        const body = document.querySelector('body');
+        let stopBTN = document.createElement('button');
+        stopBTN.innerText = "STOP TIMER";
+        stopBTN.addEventListener('click',()=>{
+            clearInterval(interval)
+        })
+        document.body.appendChild(stopBTN);
+    </script>
+</body>
+</html>
